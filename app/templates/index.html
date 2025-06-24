@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komitu</title>
+</head>
+<body>
+    <ul>
+        {% for users in users %}
+        <li>{{ users.nickname }} - {{ users.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Criar novo usuário</h2>
+    <form action="/criar_usuario" method="post">
+        <input name="nickname" placeholder="Nickname"><br>
+        <input name="nome" placeholder="Nome"><br>
+        <input name="email" placeholder="Email"><br>
+        <input name="senha" placeholder="Senha" type="password"><br>
+        <button type="submit">Criar</button>
+    </form>
+</body>
+</html>
