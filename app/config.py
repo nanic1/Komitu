@@ -1,1 +1,0 @@
-DATABASE_URL = 'mysql+mysqlconnector://root:004517@localhost:3306/komitu'
