@@ -1,8 +1,7 @@
 from sqlalchemy import Column, Integer, String, Text, DateTime, ForeignKey, UniqueConstraint
 from sqlalchemy.orm import relationship, declarative_base, sessionmaker
+from database import Base
 from datetime import datetime
-
-Base = declarative_base()
 
 # Models para os Usuarios
 class Users(Base):

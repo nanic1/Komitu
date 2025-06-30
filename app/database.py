@@ -6,6 +6,8 @@ Base = declarative_base()
 engine = create_engine('mysql+mysqlconnector://root:004517@localhost:3306/komitu', echo=True)
 SessionLocal = sessionmaker(bind=engine)
 
+import models
+
 def start_db():
     Base.metadata.create_all(bind=engine)
 
